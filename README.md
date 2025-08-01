@@ -37,11 +37,11 @@ FitMetrix is a comprehensive fitness tracking application designed to help users
 
 | Technology | Purpose |
 |------------|---------|
-| Python     | Core language |
-| MySQL      | User authentication and account storage |
-| SQLite3    | Diet/workout plans and progress data |
-| Tkinter    | GUI framework |
-| matplotlib | Data visualization |
+| *Python*     | Core language |
+| *MySQL*      | User authentication and account storage |
+| *SQLite3*    | Diet/workout plans and progress data |
+| *Tkinter*    | GUI framework |
+| *matplotlib* | Data visualization |
 
 ---
 
