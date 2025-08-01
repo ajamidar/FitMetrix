@@ -44,17 +44,3 @@ FitMetrix is a comprehensive fitness tracking application designed to help users
 | *matplotlib* | Data visualization |
 
 ---
-
-## 📁 Project Structure
-
-```bash
-FitMetrix/
-│
-├── auth/                  # User registration and login modules
-├── gui/                   # GUI components built with Tkinter
-├── plans/                 # Diet and workout plan logic
-├── progress/              # Calculators and progress visualizations
-├── database/              # SQLite3 schema and queries
-├── assets/                # Static files (if any)
-├── main.py                # Entry point of the application
-└── README.md              # This file
