@@ -1,4 +1,4 @@
-# FitMetrix 🏋️‍♂️ – All-in-One Fitness Tracker (Python)
+# FitMetrix 🏋️‍♂️ – All-in-One Fitness Tracker 
 
 FitMetrix is a comprehensive fitness tracking application designed to help users manage and monitor their health journey. With secure authentication, personalized workout and diet plans, and visual progress tracking, FitMetrix offers a powerful, user-friendly solution to support fitness goals.
 
@@ -7,7 +7,8 @@ FitMetrix is a comprehensive fitness tracking application designed to help users
 ## 🚀 Features
 
 - **Secure User Authentication**  
-  - Register/Login system with MySQL backend for secure user account management.
+  - Register/Login system with *MySQL* backend for secure user account management.
+  - Credential-encryption using a hashing algorithm
 
 - **Personalized Diet & Workout Plans**  
   - Interactive menus to search for diet and workout routines based on personal metrics:
@@ -41,12 +42,6 @@ FitMetrix is a comprehensive fitness tracking application designed to help users
 | SQLite3    | Diet/workout plans and progress data |
 | Tkinter    | GUI framework |
 | matplotlib | Data visualization |
-
----
-
-## 📸 Screenshots
-
-*(Insert screenshots here if available, such as UI navigation, plan selection, and progress graphs)*
 
 ---
 
