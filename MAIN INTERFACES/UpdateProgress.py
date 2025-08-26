@@ -116,7 +116,7 @@ class Main(tk.Frame):
 #Saving the user's progress in the system's database.
     def Save(self):
         try:
-            if int(self.BMI.get())<=40 and int(self.bodyfat.get())<=55:
+            if float(self.BMI.get())<=40 and float(self.bodyfat.get())<=55:
                 SQL.addtoUserProfile(GlobalVariables.username,self.bodyfat.get(),self.BMI.get())
                 SQL.updateWeight(GlobalVariables.username, self.weight.get())
                 messagebox.showinfo(title="Saved", message="Your progress has been saved.")
@@ -125,12 +125,14 @@ class Main(tk.Frame):
             else:
                 messagebox.showerror(title="Error",message="Invalid inputs")
         except:
-            messagebox.showerror(title="Error",message="Invalid inputs")
+            messagebox.showerror(title="Error",message="Invalid Inputs")
+            print(self.BMI.get())
+            print(self.bodyfat.get())
 
 #Updating the user's progress in the system's database. 
     def Update(self):
         try:
-            if int(self.BMI.get())<=40 and int(self.bodyfat.get())<=55:
+            if (float(self.BMI.get())<=40) and (float(self.bodyfat.get())<=55):
                 SQL.UpdateUserProfile(GlobalVariables.username,self.bodyfat.get(),self.BMI.get())
                 SQL.updateWeight(GlobalVariables.username,self.weight.get())
                 messagebox.showinfo(title="Updated", message="Your progress has been updated.")
@@ -139,4 +141,8 @@ class Main(tk.Frame):
             else:
                 messagebox.showerror(title="Error",message="Invalid inputs")
         except:
-            messagebox.showerror(title="Error",message="Invalid inputs") 
+            messagebox.showerror(title="Error",message="Invalid Inputs")
+            print(self.BMI.get())
+            print(self.bodyfat.get())
+            print(self.weight.get())
+            print(GlobalVariables.username)
